@@ -14,8 +14,44 @@ img {
 button {
   border: none;
 }
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+nav ul li {
+  padding: 1rem;
+
+  text-align: center;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: rgb(216, 216, 216);
+  padding: 1rem;
+  width: 20%;
+}
+.active {
+  color: white;
+  background-color: black;
+  padding: 1rem;
+}
 @media all and (min-width: 500px) {
   main {
     grid-template-columns: 1fr 1fr;
+  }
+  nav ul {
+    justify-content: flex-start;
+  }
+  nav ul li {
+    width: 5%;
+    padding: 1rem;
   }
 }
