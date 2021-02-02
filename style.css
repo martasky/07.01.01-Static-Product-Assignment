@@ -24,7 +24,7 @@ nav ul {
 }
 
 nav ul li {
-  padding: 1rem;
+  padding: 0.5rem;
 
   text-align: center;
 }
@@ -33,15 +33,32 @@ nav ul li a {
   color: black;
 }
 
-a:hover {
-  background-color: rgb(216, 216, 216);
-  padding: 1rem;
-  width: 20%;
-}
 .active {
   color: white;
   background-color: black;
   padding: 1rem;
+}
+.active:hover {
+  color: white;
+  background-color: black;
+  padding: 1rem;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.categories li {
+  list-style: none;
+  padding: 1rem;
+}
+.categories a {
+  text-decoration: none;
+  color: grey;
+}
+.categories a:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
 }
 @media all and (min-width: 500px) {
   main {
@@ -53,5 +70,17 @@ a:hover {
   nav ul li {
     width: 5%;
     padding: 1rem;
+  }
+  nav ul li a:hover {
+    background-color: rgb(216, 216, 216);
+    padding: 1rem;
+    width: 20%;
+  }
+  .categories {
+    flex-direction: row;
+    border-bottom: 1px solid black;
+  }
+  body {
+    margin: 0;
   }
 }
