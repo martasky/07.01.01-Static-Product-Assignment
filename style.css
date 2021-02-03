@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+
 .productview {
   display: grid;
 }
@@ -6,7 +8,14 @@ h1 {
   text-decoration: underline;
   padding: 1rem;
 }
-
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: "Raleway", sans-serif;
+}
 img {
   max-width: 100%;
   margin: 0 auto;
