@@ -1,16 +1,17 @@
-main {
+.productview {
   display: grid;
 }
+h1 {
+  grid-column: 1 / -1;
+  text-decoration: underline;
+  padding: 1rem;
+}
+
 img {
   max-width: 100%;
   margin: 0 auto;
 }
-.soldOut {
-  background: red;
 
-  padding: 1rem;
-  z-index: 1;
-}
 button {
   border: none;
 }
@@ -60,21 +61,63 @@ nav ul li a {
   text-decoration: underline;
   text-decoration-color: black;
 }
+.productlist {
+  display: grid;
+}
+.showPrice {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: red;
+}
+.price {
+}
+.discountedPrice {
+  padding-left: 1rem;
+  text-decoration: line-through;
+  color: gray;
+}
+.discounted {
+  position: relative;
+}
+.soldOut {
+  position: relative;
+}
+.soldOut img {
+  opacity: 30%;
+}
+.soldOutText {
+  position: absolute;
+  left: 0;
+  top: 240px;
+  padding: 5px;
+  background: rgba(134, 129, 129, 0.3);
+}
+.disText {
+  position: absolute;
+  top: 240px;
+  left: 0;
+  background-color: red;
+  color: white;
+  padding: 5px;
+}
 @media all and (min-width: 500px) {
-  main {
+  .productview {
     grid-template-columns: 1fr 1fr;
   }
   nav ul {
     justify-content: flex-start;
   }
+
   nav ul li {
-    width: 5%;
     padding: 1rem;
   }
   nav ul li a:hover {
     background-color: rgb(216, 216, 216);
     padding: 1rem;
-    width: 20%;
+  }
+  nav ul li a {
+    padding: 1rem;
   }
   .categories {
     flex-direction: row;
@@ -83,4 +126,11 @@ nav ul li a {
   body {
     margin: 0;
   }
+  .productlist {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+    grid-gap: 2rem;
+    grid-auto-rows: 1fr;
+    padding: 1rem;
+    width: 70%;
+    
 }
