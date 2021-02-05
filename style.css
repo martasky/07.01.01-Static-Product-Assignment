@@ -45,7 +45,7 @@ ul {
   padding: 0;
   line-height: 0.5;
 }
-span {
+.bold {
   font-weight: bold;
 }
 .purchaseBox p,

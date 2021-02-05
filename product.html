@@ -17,13 +17,14 @@
       </nav>
     </header>
     <main class="productview">
-      <div class="breadcrumbs">
-        <p>Home</p>
-        <a href="productlist.html"><p>Footwear</p></a>
-      </div>
+      <ul class="breadcrumbs">
+        <li>Home</li>
+        <li class="productCategory"><a href="productlist.html">Footwear</a></li>
+      </ul>
       <div id="wrapper">
         <figure class="soldOutProduct">
           <img
+            class="productImage"
             src="https://kea-alt-del.dk/t7/images/webp/640/1549.webp"
             alt="Sahara Team India Fanwear Round Neck Jersey"
           />
@@ -32,24 +33,42 @@
       </div>
       <article>
         <section class="purchaseBox">
-          <h2>Puma | Men</h2>
-          <h3>Jiyu Slip On Sneaker</h3>
-          <p>3299 DKK</p>
+          <h2>
+            <span class="brand">Puma</span> | <span class="gender">Men</span>
+          </h2>
+          <h3 class="productName">Jiyu Slip On Sneaker</h3>
+          <p><span class="productPrice">3299</span> DKK</p>
           <button>Buy now</button>
         </section>
         <section class="info">
           <h2>Product information</h2>
           <ul>
             <li>
-              <p><span>Color:</span> white</p>
-              <p><span>Season:</span> fall</p>
-              <p><span>Usage:</span> sport</p>
-              <p><span>Production year:</span> 2010</p>
-              <p><span>Inventory number:</span> 1549</p>
+              <p>
+                <span class="bold">Color:</span>
+                <span class="color">white</span>
+              </p>
+              <p>
+                <span class="bold">Season:</span>
+                <span class="season">fall</span>
+              </p>
+              <p>
+                <span class="bold">Usage:</span>
+                <span class="usage">sport</span>
+              </p>
+              <p>
+                <span class="bold">Production year:</span>
+                <span class="productionYear">2010</span>
+              </p>
+              <p>
+                <span class="bold">Inventory number:</span>
+                <span class="inventoryNumber">1549</span>
+              </p>
             </li>
           </ul>
         </section>
       </article>
     </main>
+    <script src="product.js"></script>
   </body>
 </html>
