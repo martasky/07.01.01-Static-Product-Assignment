@@ -8,6 +8,10 @@ function showProduct(product) {
   console.log(product);
   document.querySelector(".breadcrumbs .productCategory").textContent =
     product.category;
+  document.querySelector(".breadcrumbs .productSubcategory").textContent =
+    product.subcategory;
+  document.querySelector(".breadcrumbs .productBrand").textContent =
+    product.brandname;
   document.querySelector(".purchaseBox .productName").textContent =
     product.variantname;
   document.querySelector(".purchaseBox .productPrice").textContent =

@@ -168,12 +168,18 @@ h4 {
   flex-flow: row wrap;
   justify-content: flex-start;
   grid-column: 1 / -1;
-}
-.breadcrumbs p {
   padding: 1rem;
+  padding-top: 0;
   text-decoration: underline;
   font-size: 30px;
   font-weight: bold;
+}
+
+.breadcrumbs li {
+  padding: 1rem;
+}
+.breadcrumbs li:nth-child(1) {
+  padding-left: 0;
 }
 .soldOutProduct {
   position: relative;
@@ -238,5 +244,9 @@ figure {
     position: absolute;
     top: 350px;
     left: 0;
+  }
+  img,
+  .productImage {
+    box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
   }
 }
