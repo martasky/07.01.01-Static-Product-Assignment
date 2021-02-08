@@ -16,6 +16,12 @@ p,
 a {
   font-family: "Raleway", sans-serif;
 }
+h4 {
+  margin-top: 0;
+}
+h3 {
+  margin-bottom: 0.2rem;
+}
 a {
   text-decoration: none;
   color: black;
@@ -122,13 +128,12 @@ article {
 h4 {
   font-weight: normal;
   font-size: 1rem;
-  line-height: 2px;
+  line-height: 1.2;
 }
 .showPrice {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  color: red;
 }
 .price,
 .discountedPrice {
@@ -138,6 +143,9 @@ h4 {
   padding-left: 1rem;
   text-decoration: line-through;
   color: gray;
+}
+.priceDis {
+  color: red;
 }
 .discounted {
   position: relative;
@@ -151,7 +159,7 @@ h4 {
 .soldOutText {
   position: absolute;
   left: 0;
-  top: 500px;
+  top: 25px;
   padding: 5px;
   background: rgba(134, 129, 129, 0.3);
 }
@@ -237,7 +245,7 @@ figure {
   .soldOutText {
     position: absolute;
     left: 0;
-    top: 350px;
+    top: 25px;
     padding: 5px;
   }
   .disText {

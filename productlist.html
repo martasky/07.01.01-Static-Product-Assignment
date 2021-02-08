@@ -19,17 +19,26 @@
     <main>
       <h1>Footwear</h1>
       <div class="productlist">
-        <article class="smallProduct discounted">
-          <a href="product.html"><img
-            src="	https://kea-alt-del.dk/t7/images/webp/640/1541.webp"
-            alt="Ballistic Spike hite Green Shoe"></a>
-          <div class="disText">-20%</div>
-          <h3 class="subtle">Puma | Sports</h3>
-          <h4>Ballistic Spike hite Green Shoe</h4>
-          <div class="showPrice"><p class="price">5299 DKK</p>
-          <p class="discountedPrice">7000 DKK</p></article>
-        </article>
-        <article class="smallProduct soldOut">
+        <template id="smallProductTemplate">
+          <article class="smallProduct">
+            <a href="product.html"
+              ><img
+                src="	https://kea-alt-del.dk/t7/images/webp/640/1541.webp"
+                alt="Ballistic Spike hite Green Shoe"
+            /></a>
+            <!-- <div class="disText">-20%</div> -->
+            <div class="dis"></div>
+            <div class="sold"></div>
+            <h3 class="subtle">Puma | Sports</h3>
+            <h4>Ballistic Spike hite Green Shoe</h4>
+            <div class="showPrice">
+              <p class="price">5299 DKK</p>
+              <p></p>
+            </div>
+            <!-- <p class="discountedPrice">7000 DKK</p></article> -->
+          </article></template
+        >
+        <!-- <article class="smallProduct soldOut">
           <a href="product.html"><img
             src="https://kea-alt-del.dk/t7/images/webp/640/1543.webp"
             alt="Basket-Biz Sneaker"></a>
@@ -150,8 +159,9 @@
             <h3 class="subtle">Puma | Sports</h3>
             <h4>Ballistic Spike hite Green Shoe</h4>
             <p class="price">5299 DKK</p>
-          </article>
+          </article> -->
       </div>
     </main>
+    <script src="productlist.js"></script>
   </body>
 </html>
