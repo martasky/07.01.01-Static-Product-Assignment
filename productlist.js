@@ -22,6 +22,7 @@ function showProduct(product) {
   clone.querySelector(
     "img"
   ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+  clone.querySelector("a").href = `product.html?id=${product.id}`;
   clone.querySelector(".price").textContent = ` ${product.price} DKK`;
 
   if (product.soldout) {
