@@ -1,7 +1,4 @@
-const urlParams = new URLSearchParams(window.location.search);
-const cat = urlParams.get("cat");
-
-const url = "https://kea-alt-del.dk/t7/api/products/" + cat;
+const url = "https://kea-alt-del.dk/t7/api/products/";
 fetch(url)
   .then(function (res) {
     return res.json();
