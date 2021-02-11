@@ -2,6 +2,7 @@
 
 .productview {
   display: grid;
+  grid-template-columns: 1fr;
 }
 h1 {
   grid-column: 1 / -1;
@@ -135,6 +136,10 @@ h4 {
   justify-content: flex-start;
   align-items: flex-start;
 }
+.purchaseBox .showPrice {
+  margin-top: 1.7rem;
+  margin-bottom: 2rem;
+}
 .price,
 .discountedPrice {
   margin: 0;
@@ -165,11 +170,11 @@ h4 {
 }
 .disText {
   position: absolute;
-  top: 500px;
+  top: 400px;
   left: 0;
   background-color: red;
   color: white;
-  padding: 5px;
+  padding: 0.5rem;
 }
 .breadcrumbs {
   display: flex;
@@ -207,6 +212,24 @@ figure {
   margin: 0;
   margin-left: 1rem;
 }
+.productpageDiscount {
+  position: relative;
+}
+.productpageDiscount p:last-child {
+  position: absolute;
+  padding: 1rem;
+  background-color: red;
+  left: 0;
+  top: 350px;
+}
+.breadcrumbs {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+.productpageDiscount p {
+  font-size: 1rem;
+}
+
 @media all and (min-width: 500px) {
   .productview {
     grid-template-columns: 1fr 1fr;
@@ -260,5 +283,30 @@ figure {
   img,
   .productImage {
     box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  }
+  .productpageDiscount {
+    position: relative;
+  }
+  .productpageDiscount p:last-child {
+    position: absolute;
+    padding: 1rem;
+    background-color: red;
+    left: 0;
+    top: 90px;
+  }
+  .breadcrumbs {
+    font-size: 1.8rem;
+    padding: 1rem;
+    margin-top: 0;
+  }
+  .productpageDiscount p:last-child {
+    font-size: 50px;
+    color: white;
+  }
+  figure .hide {
+    display: none;
+  }
+  .productpageDiscount p {
+    font-size: 50px;
   }
 }
