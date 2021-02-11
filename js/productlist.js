@@ -1,4 +1,8 @@
-const url = "https://kea-alt-del.dk/t7/api/products/";
+const urlParams = new URLSearchParams(window.location.search);
+const category = urlParams.get("category");
+console.log(category);
+
+const url = "https://kea-alt-del.dk/t7/api/products?category=" + category;
 fetch(url)
   .then(function (res) {
     return res.json();
@@ -49,4 +53,5 @@ function showProduct(product) {
   const parent = document.querySelector(".productlist");
 
   parent.appendChild(clone);
+  document.querySelector("main h1").textContent = product.category;
 }
