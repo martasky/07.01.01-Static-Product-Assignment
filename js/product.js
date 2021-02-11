@@ -44,6 +44,7 @@ function showProduct(product) {
 
   if (product.discount) {
     document.querySelector("figure .hide").classList.remove("hide");
+    document.querySelector("section").classList.add("disProduct");
     document.querySelector("figure").classList.add("productpageDiscount");
     document.querySelector(
       ".productpageDiscount p:last-child"
