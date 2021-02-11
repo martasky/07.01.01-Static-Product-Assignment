@@ -230,6 +230,10 @@ figure {
     flex-direction: row;
     border-bottom: 1px solid black;
   }
+  .categories ul {
+    display: flex;
+    flex-direction: row;
+  }
   body {
     margin: 0;
   }
