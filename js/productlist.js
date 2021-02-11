@@ -1,5 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const category = urlParams.get("category");
+
 console.log(category);
 
 const url = "https://kea-alt-del.dk/t7/api/products?category=" + category;
